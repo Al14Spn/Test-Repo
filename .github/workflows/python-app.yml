@@ -12,11 +12,16 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
 
-        - name: Run script.py
+      - name: Run script.py
+        run: python script.py
+
+  - name: Run script.py
         run: |
           python script.py
+          echo "Test finalizat cu succes!"
