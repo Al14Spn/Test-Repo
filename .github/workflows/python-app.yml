@@ -20,3 +20,7 @@ jobs:
 
       - name: Run script.py
         run: python script.py
+
+ - name: Run script.py
+        run: |
+          python script.py
