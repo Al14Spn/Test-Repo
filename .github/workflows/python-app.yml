@@ -21,6 +21,7 @@ jobs:
       - name: Run script.py
         run: python script.py
 
- - name: Run script.py
+  - name: Run script.py
         run: |
           python script.py
+          echo "Test finalizat cu succes!"
