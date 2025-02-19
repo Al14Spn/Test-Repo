@@ -1,0 +1,1 @@
+print("Hello, GitHub Actions! Scriptul s-a rulat cu succes!")
