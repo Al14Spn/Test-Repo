@@ -19,9 +19,6 @@ jobs:
           python-version: '3.x'
 
       - name: Run script.py
-        run: python script.py
-
-  - name: Run script.py
         run: |
           python script.py
           echo "Test finalizat cu succes!"
