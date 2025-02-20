@@ -18,7 +18,18 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Set environment variables
+        env:
+          WORLDPAY_USERNAME: ${{ secrets.WORLDPAY_USERNAME }}
+          WORLDPAY_PASSWORD: ${{ secrets.WORLDPAY_PASSWORD }}
+        run: echo "Environment variables set"
+
       - name: Run script.py
         run: |
           python script.py
           echo "Test finalizat cu succes!"
+
+   
